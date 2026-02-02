@@ -4,27 +4,57 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Library | Yukyoung Sohn</title>
-  <link rel="stylesheet" href="./assets/style.css" />
+  <link rel="stylesheet" href="./assets/style.v1.css" />
 </head>
 
 <body>
   <!-- TOP -->
   <header class="top">
-    <a class="top__btn" href="./index.html" aria-label="Home">Home</a>
+    <a class="top__btn" href="./index.html">Home</a>
   </header>
 
   <!-- CENTER -->
   <main class="center" aria-label="Library">
-    <nav class="toc" aria-label="Table of contents">
-      <a class="toc__item" href="./movingpicture.html">1. movingpicture</a>
-      <a class="toc__item" href="./picture.html">2. picture</a>
-      <a class="toc__item" href="./text.html">3. text</a>
-    </nav>
+    <section class="accordion">
+
+      <button class="acc__btn" aria-expanded="false">
+        1. movingpicture
+      </button>
+      <div class="acc__panel" aria-hidden="true">
+        <ul class="acc__list">
+          <li>Work A</li>
+          <li>Work B</li>
+        </ul>
+      </div>
+
+      <button class="acc__btn" aria-expanded="false">
+        2. picture
+      </button>
+      <div class="acc__panel" aria-hidden="true">
+        <ul class="acc__list">
+          <li>Series A</li>
+          <li>Series B</li>
+        </ul>
+      </div>
+
+      <button class="acc__btn" aria-expanded="false">
+        3. text
+      </button>
+      <div class="acc__panel" aria-hidden="true">
+        <ul class="acc__list">
+          <li>Essay A</li>
+          <li>Note B</li>
+        </ul>
+      </div>
+
+    </section>
   </main>
 
   <!-- BOTTOM -->
   <footer class="bottom">
     <span class="name">Library</span>
   </footer>
+
+  <script src="./library.v1.js"></script>
 </body>
 </html>
