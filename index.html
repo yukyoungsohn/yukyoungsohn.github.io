@@ -10,9 +10,7 @@
 <body>
   <!-- TOP -->
   <header class="top">
-    <a class="top__btn" href="./library.html" aria-label="Library">
-      Library
-    </a>
+    <a class="top__btn" href="./library.html" aria-label="Library">Library</a>
   </header>
 
   <!-- CENTER IMAGE -->
@@ -26,7 +24,8 @@
       Yukyoung Sohn
     </button>
 
-    <section id="contactPanel" class="contact" hidden>
+    <!-- ✅ hidden 제거: 애니메이션을 위해 항상 DOM에 존재해야 함 -->
+    <section id="contactPanel" class="contact" aria-hidden="true">
       <div class="contact__inner">
         <p class="contact__line"><span class="label">Email</span> <a href="mailto:you@example.com">you@example.com</a></p>
         <p class="contact__line"><span class="label">Instagram</span> <a href="https://instagram.com/yourhandle" target="_blank" rel="noreferrer">@yourhandle</a></p>
@@ -35,7 +34,7 @@
     </section>
   </footer>
 
+  <!-- ✅ 스크립트는 딱 1번, body 끝에서만 -->
   <script src="./script.js"></script>
 </body>
 </html>
-<script src="./script.js"></script>
