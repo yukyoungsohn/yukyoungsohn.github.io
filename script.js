@@ -2,13 +2,9 @@ const btn = document.getElementById("nameBtn");
 const panel = document.getElementById("contactPanel");
 
 btn.addEventListener("click", () => {
-  const isOpen = !panel.hasAttribute("hidden");
+  const isOpen = panel.classList.contains("is-open");
+  panel.classList.toggle("is-open");
 
-  if (isOpen) {
-    panel.setAttribute("hidden", "");
-    btn.setAttribute("aria-expanded", "false");
-  } else {
-    panel.removeAttribute("hidden");
-    btn.setAttribute("aria-expanded", "true");
-  }
+  btn.setAttribute("aria-expanded", String(!isOpen));
+  panel.setAttribute("aria-hidden", String(isOpen));
 });
