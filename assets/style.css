@@ -142,4 +142,50 @@ body{
   .label{ width: 70px; }
 }
 
+/* ===== Accordion ===== */
+.accordion{
+  width: 100%;
+  max-width: 720px;
+  text-align: center;
+}
+
+.acc__btn{
+  width: 100%;
+  background: transparent;
+  border: 0;
+  padding: 10px 0;
+  font-family: inherit;
+  font-size: 20px;
+  letter-spacing: 0.02em;
+  color: var(--fg);
+  cursor: pointer;
+}
+
+.acc__btn:hover{ opacity: 0.6; }
+
+.acc__panel{
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition:
+    max-height 0.4s ease,
+    opacity 0.3s ease;
+}
+
+.acc__panel.is-open{
+  max-height: 300px; /* 내용 많아지면 늘려도 됨 */
+  opacity: 1;
+}
+
+.acc__list{
+  list-style: none;
+  padding: 6px 0 14px;
+  margin: 0;
+  font-size: 16px;
+}
+
+.acc__list li{
+  padding: 4px 0;
+  opacity: 0.8;
+}
 
