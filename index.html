@@ -2,63 +2,39 @@
 <html lang="ko">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Yukyoung Sohn | Home</title>
-  <link rel="stylesheet" href="assets/style.css" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Yukyoung Sohn</title>
+  <link rel="stylesheet" href="./style.css" />
 </head>
+
 <body>
-  <header class="topbar">
-    <div class="brand">Yukyoung Sohn</div>
-    <nav class="nav">
-      <a class="active" href="index.html">Home</a>
-      <a href="works.html">Works</a>
-      <a href="notes.html">Notes</a>
-      <a href="about.html">About</a>
-    </nav>
+  <!-- TOP -->
+  <header class="top">
+    <a class="top__btn" href="./library.html" aria-label="Library">
+      Library
+    </a>
   </header>
 
-  <main class="wrap">
-    <section class="panel hero">
-      <p class="kicker">PORTFOLIO + NOTES</p>
-      <h1 class="title">작업과 기록을 모으는 작은 아카이브</h1>
-      <p class="subtitle">
-        영화 / 애니메이션 / 스케치 / 현장 메모.  
-      </p>
-      <div class="hero-cta">
-        <a class="btn" href="works.html">작업 보러가기</a>
-        <a class="btn ghost" href="notes.html">노트 읽기</a>
-      </div>
-    </section>
-
-    <section class="grid">
-      <article class="panel card">
-        <h2>최근 작업</h2>
-        <ul class="list">
-          <li><span class="tag">FILM</span> Graduation screening project</li>
-          <li><span class="tag">ANIM</span> Pigeon Universe: Rhythm and Crumbs</li>
-          <li><span class="tag">PHOTO</span> First roll of film</li>
-        </ul>
-        <a class="more" href="works.html">전체 작업 →</a>
-      </article>
-
-      <article class="panel card">
-        <h2>최근 노트</h2>
-        <ul class="list">
-          <li><span class="tag">NOTE</span> 촬영장비 정리: gear vs equipment</li>
-          <li><span class="tag">NOTE</span> 35mm 화면비 혼란에 대한 메모</li>
-          <li><span class="tag">NOTE</span> LA 여행 준비: 참고 작품들</li>
-        </ul>
-        <a class="more" href="notes.html">전체 노트 →</a>
-      </article>
-    </section>
+  <!-- CENTER IMAGE -->
+  <main class="center" aria-label="Main image">
+    <img class="hero" src="./assets/hero.jpg" alt="Main image" />
   </main>
 
-  <footer class="footer">
-    <span>© <span id="y"></span> Yukyoung Sohn</span>
+  <!-- BOTTOM -->
+  <footer class="bottom">
+    <button id="nameBtn" class="name" type="button" aria-expanded="false" aria-controls="contactPanel">
+      Yukyoung Sohn
+    </button>
+
+    <section id="contactPanel" class="contact" hidden>
+      <div class="contact__inner">
+        <p class="contact__line"><span class="label">Email</span> <a href="mailto:you@example.com">you@example.com</a></p>
+        <p class="contact__line"><span class="label">Instagram</span> <a href="https://instagram.com/yourhandle" target="_blank" rel="noreferrer">@yourhandle</a></p>
+        <p class="contact__line"><span class="label">Vimeo</span> <a href="https://vimeo.com/yourname" target="_blank" rel="noreferrer">vimeo.com/yourname</a></p>
+      </div>
+    </section>
   </footer>
 
-  <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
-  </script>
+  <script src="./script.js"></script>
 </body>
 </html>
