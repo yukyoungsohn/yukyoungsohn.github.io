@@ -1,1 +1,0 @@
-# yukyoungsohn.github.io
