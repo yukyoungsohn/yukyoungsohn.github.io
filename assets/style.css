@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "KoPubBatang";
+  src: url("./fonts/KoPubWorld Batang Medium.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 :root{
   --bg:#0f0f12;
   --paper:#141418;
@@ -12,8 +19,8 @@
 html,body{ height:100%; }
 body{
   margin:0;
-  font-family: ui-serif, "Iropke Batang", "Apple SD Gothic Neo", "Noto Serif KR", serif;
-  color:var(--ink);
+  font-family: "KoPubBatang", "Noto Serif KR", serif;
+}
   background:
     radial-gradient(1000px 600px at 15% 10%, rgba(231,210,122,.08), transparent 60%),
     radial-gradient(800px 500px at 80% 35%, rgba(233,228,216,.06), transparent 60%),
