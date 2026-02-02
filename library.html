@@ -3,23 +3,28 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Library - Yukyoung Sohn</title>
+  <title>Library | Yukyoung Sohn</title>
   <link rel="stylesheet" href="./assets/style.css" />
 </head>
+
 <body>
+  <!-- TOP -->
   <header class="top">
-    <a class="top__btn" href="./index.html">Back</a>
+    <a class="top__btn" href="./index.html" aria-label="Home">Home</a>
   </header>
 
-  <main class="center">
-    <div style="width:min(720px,86vw); text-align:center; line-height:1.8;">
-      <h1 style="font-size:22px; font-weight:400; margin:0 0 14px;">Library</h1>
-      <p style="margin:0;">여기에 작업 목록/링크를 쌓으면 됩니다.</p>
-    </div>
+  <!-- CENTER -->
+  <main class="center" aria-label="Library">
+    <nav class="toc" aria-label="Table of contents">
+      <a class="toc__item" href="./movingpicture.html">1. movingpicture</a>
+      <a class="toc__item" href="./picture.html">2. picture</a>
+      <a class="toc__item" href="./text.html">3. text</a>
+    </nav>
   </main>
 
+  <!-- BOTTOM -->
   <footer class="bottom">
-    <button class="name" type="button" onclick="location.href='./index.html'">Yukyoung Sohn</button>
+    <span class="name">Library</span>
   </footer>
 </body>
 </html>
